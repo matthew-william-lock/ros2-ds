@@ -1,3 +1,8 @@
+| :exclamation:  This work is modified from [PlayStation-JoyInterface-ROS2](https://github.com/HarvestX/PlayStation-JoyInterface-ROS2)  |
+|-----------------------------------------|
+
+As stated above, this work was originally produced by [HarvestX](https://github.com/HarvestX/PlayStation-JoyInterface-ROS2). The codebase has been modified for my work in [teensy-vs-upduino-particle-filter](https://github.com/matthew-william-lock/teensy-vs-upduino-particle-filter).
+
 [![lint](https://github.com/HarvestX/PlayStation-JoyInterface-ROS2/actions/workflows/lint.yml/badge.svg)](https://github.com/HarvestX/PlayStation-JoyInterface-ROS2/actions/workflows/lint.yml)
 
 # PlayStation-JoyInterface-ROS2
