@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// This file has been modified by https://github.com/matthew-william-lock
 
 #include "p9n_node/teleop_twist_joy_node.hpp"
 
@@ -81,9 +82,11 @@ void TeleopTwistJoyNode::onJoy(sensor_msgs::msg::Joy::ConstSharedPtr joy_msg)
   {
     float l_y = this->p9n_if_->tiltedStickLY();
     float l_x = this->p9n_if_->tiltedStickLX();
+    float r_x = this->p9n_if_->tiltedStickRX();
 
     twist.linear.x = speed_factor_ * l_y;
-    twist.angular.z = M_PI * speed_factor_ * l_x;
+    // twist.angular.z = M_PI * speed_factor_ * l_x;
+    twist.angular.z = M_PI * speed_factor_ * r_x;
 
     this->twist_pub_->publish(twist);
 
